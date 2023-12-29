@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.366" timestamp="2023-12-29T16:02:47.875580" hostname="adalberto-VirtualBox"><testcase classname="" name="" time="0.000"><error message="collection failure">/home/adalberto/.local/lib/python3.10/site-packages/_pytest/config/__init__.py:641: in _importconftest
+    mod = import_path(conftestpath, mode=importmode, root=rootpath)
+/home/adalberto/.local/lib/python3.10/site-packages/_pytest/pathlib.py:567: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+&lt;frozen importlib._bootstrap&gt;:1050: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1027: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1006: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:688: in _load_unlocked
+    ???
+/home/adalberto/.local/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+/home/adalberto/.local/lib/python3.10/site-packages/pandas/tests/window/conftest.py:95: in &lt;module&gt;
+    pytest.param("numba", marks=[td.skip_if_no("numba"), pytest.mark.single_cpu]),
+/home/adalberto/.local/lib/python3.10/site-packages/pandas/util/_test_decorators.py:156: in skip_if_no
+    not safe_import(package, min_version=min_version), reason=msg
+/home/adalberto/.local/lib/python3.10/site-packages/pandas/util/_test_decorators.py:69: in safe_import
+    mod = __import__(mod_name)
+/usr/lib/python3/dist-packages/numba/__init__.py:42: in &lt;module&gt;
+    from numba.np.ufunc import (vectorize, guvectorize, threading_layer,
+/usr/lib/python3/dist-packages/numba/np/ufunc/__init__.py:3: in &lt;module&gt;
+    from numba.np.ufunc.decorators import Vectorize, GUVectorize, vectorize, guvectorize
+/usr/lib/python3/dist-packages/numba/np/ufunc/decorators.py:3: in &lt;module&gt;
+    from numba.np.ufunc import _internal
+E   SystemError: initialization of _internal failed without raising an exception</error></testcase></testsuite></testsuites>
