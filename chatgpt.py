@@ -1,13 +1,12 @@
 #! /usr/bin/python
 
 import openai   
+from bd import *
 
-print("Content-type: text/html")
-print("")
+openai.api_key = api_key
 
-openai.api_key = "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"
-
-model_engine = "gpt-3.5-turbo" #"text-davinci-003"
+#model_engine = "gpt-3.5-turbo" 
+model_engine = "text-davinci-003"
 
 prompt = "Hello, how are you today?"
 
