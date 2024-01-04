@@ -2,7 +2,7 @@ import jinja2
 import pdfkit
 from datetime import datetime
 
-my_name = "Adalberto"
+my_name = "Alexandre"
 item1 = "TV"
 item2 = "Refrigerator"
 item3 = "Washing Machine"

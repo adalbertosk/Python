@@ -12,7 +12,7 @@ from fpdf import FPDF
 
 os.environ["OPENAI_API_KEY"] = api_key
 
-query = "Who am I and describe the place I work"
+query = "Describe the place I work"
 
 #loader = TextLoader('data.txt') 
 loader = DirectoryLoader("datasources/")
